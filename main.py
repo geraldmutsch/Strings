@@ -1,7 +1,9 @@
 #some examples of string operations
+
 teacher = input("Name of the Teacher?")   #get the name and story it in a string variable
 welcome = "Hello " + teacher + "! You are the teacher today"    #creating the welcome message in a new string
 print (welcome)                         #print the welcome message on the screen
+
 
 #work with indices
 OneLetter = teacher[4]              #Get the 5th letter of the teachers name
@@ -15,8 +17,19 @@ print(teacher[:3])  #returns charaters up to 4 (1,2,3)
 
 
 #looping through a string
-letter_number=0
+letter_number=0                                             #needed for counting
 for letter in teacher:
-    letter_number=letter_number + 1
-    print(str(letter_number) + ":" + letter)
+    letter_number=letter_number + 1                         #count up
+    print(str(letter_number) + ":" + letter)                #print letter and count
+
+#string library
+print(teacher.lower())   #print teacher name in lowercase
+
+if (teacher.find("Gerald") > -1) :
+    print("Wow, its you!")
+else:   
+    print("Seems not to be you")
+
+NewTeacher = teacher.replace("Gerald","Bob")
+print(NewTeacher)
 
