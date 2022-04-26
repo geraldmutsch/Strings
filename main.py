@@ -8,3 +8,7 @@ OneLetter = teacher[4]              #Get the 5th letter of the teachers name
 print ("The 5th letter in the teacher's name is " + OneLetter)
 print ("The name of the teacher is " + str(len(teacher)) + " characters")    #get the length of a string
 
+#slicing the string
+print(teacher[3:])  #returns character 4 -> End
+print(teacher[2:4]) #returns characters 3 to 5 (=3 and 4)
+print(teacher[:3])  #returns charaters up to 4 (1,2,3)
