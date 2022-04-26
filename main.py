@@ -25,11 +25,15 @@ for letter in teacher:
 #string library
 print(teacher.lower())   #print teacher name in lowercase
 
-if (teacher.find("Gerald") > -1) :
-    print("Wow, its you!")
-else:   
+if (teacher.find("Gerald") > -1) :  #find if "Gerald" is in the string
+    print("Wow, its you!")          #if yes
+else:                               #if no
     print("Seems not to be you")
 
-NewTeacher = teacher.replace("Gerald","Bob")
+NewTeacher = welcome.replace("Gerald","Bob")    #replace one part with another
 print(NewTeacher)
 
+#Now find the first name
+FullName = input("Fullname please:")
+PlaceOfTheSpace = FullName.find(" ")
+print(FullName[:PlaceOfTheSpace])       #print only the first name
