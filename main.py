@@ -12,3 +12,11 @@ print ("The name of the teacher is " + str(len(teacher)) + " characters")    #ge
 print(teacher[3:])  #returns character 4 -> End
 print(teacher[2:4]) #returns characters 3 to 5 (=3 and 4)
 print(teacher[:3])  #returns charaters up to 4 (1,2,3)
+
+
+#looping through a string
+letter_number=0
+for letter in teacher:
+    letter_number=letter_number + 1
+    print(str(letter_number) + ":" + letter)
+
